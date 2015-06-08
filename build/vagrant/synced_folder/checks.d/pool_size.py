@@ -43,7 +43,7 @@ def get_pool_status( self, instance ):
                 value = status['countPerNodeStatus'][stat]
                 # value_str = str(value)
                 # print(slug_name + "__" + stat + '::' + value_str )
-                self.gauge('pool_size_' + slug_name + '__' + stat, value)
+                self.gauge(str('poolsize.' + slug_name + '.' + stat), value)
 
 
 
