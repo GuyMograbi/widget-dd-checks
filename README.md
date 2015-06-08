@@ -22,6 +22,13 @@ Test your script by running `sudo -u dd-agent dd-agent check hello_world`
 
 make sure to replace `hello_world` with your script name
 
+## Secret configuration
+
+if you have secret configuration, simply put the `yaml` file under `dev/conf.d/` and rerun `provision`
+after every `rsync`. The provision script will copy conf.d from dev to datadog.
+
+
+
 
 
 

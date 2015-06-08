@@ -31,4 +31,7 @@ sudo ln -Tfs /vagrant/checks.d /etc/dd-agent/checks.d
 sudo mv /etc/dd-agent/conf.d /etc/dd-agent/orig.conf.d
 sudo ln -Tfs /vagrant/conf.d /etc/dd-agent/conf.d
 
+echo "overriding conf.d from dev folder"
+cp -f /vagrant/dev/conf.d/* /vagrant/conf.d/
+
 echo "now you can test scripts by running sudo -u dd-agent dd-agent check my_check"

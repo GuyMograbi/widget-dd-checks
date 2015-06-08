@@ -1,0 +1,7 @@
+
+init_config:
+
+instances:
+    - account_uuid: __account_uuid__
+    # must end with /
+      endpoing: http://example.com/
